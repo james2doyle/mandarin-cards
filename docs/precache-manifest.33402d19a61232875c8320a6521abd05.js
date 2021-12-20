@@ -1,6 +1,6 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "974d8ddda88e21e45b2d",
+    "revision": "eee2b54b1fba504b8256",
     "url": "/mandarin-cards/css/app.c5e6331c.css"
   },
   {
@@ -12,12 +12,12 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/mandarin-cards/data/120-daily-used-short-sentences.json"
   },
   {
-    "revision": "f2799a4ea21e4706dc5699dfa4d29c61",
+    "revision": "456f30cdea1e77418f103fb2c3d73201",
     "url": "/mandarin-cards/index.html"
   },
   {
-    "revision": "974d8ddda88e21e45b2d",
-    "url": "/mandarin-cards/js/app.15277786.js"
+    "revision": "eee2b54b1fba504b8256",
+    "url": "/mandarin-cards/js/app.79f52970.js"
   },
   {
     "revision": "fdd003382cdab8a44da1",

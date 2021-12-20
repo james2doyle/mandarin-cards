@@ -30,7 +30,7 @@ import { ref, computed, watch } from '@vue/composition-api';
 import Card from 'Components/Card.vue';
 
 const { left, right } = useMagicKeys();
-const { isFetching, error, data } = useFetch('/data/120-daily-used-short-sentences.json').get().json();
+const { isFetching, error, data } = useFetch('data/120-daily-used-short-sentences.json').get().json();
 
 export default {
   name: 'App',

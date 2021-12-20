@@ -1,5 +1,7 @@
 # Mandarin Cards
 
+[View Site](https://james2doyle.github.io/mandarin-cards/)
+
 ## Project setup
 
 ```
