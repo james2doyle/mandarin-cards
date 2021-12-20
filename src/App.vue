@@ -1,16 +1,9 @@
 <template>
-  <div id="app" class="min-h-screen p-5 flex flex-col justify-center items-center bg-gray-200 text-gray-900">
-    <div v-if="isFetching || !currentCard" class="loading-wrapper w-full text-center">
-      <p><strong>Loading...</strong></p>
-    </div>
+  <div id="app" class="flex-1 w-full flex flex-col items-stretch">
     <div v-if="!isSupported" class="text-sm">
-      Your browser does not support SpeechSynthesis API,
-      <a
-        href="https://caniuse.com/mdn-api_speechsynthesis"
-        target="_blank"
-      >more details</a>
+      Your browser does not support SpeechSynthesis API, <a href="https://caniuse.com/mdn-api_speechsynthesis" target="_blank">more details</a>
     </div>
-    <div v-else class="controls-wrapper min-h-full w-full flex flex-col flex-1 justify-between">
+    <div v-else ref="wrapper" class="controls-wrapper flex-1 flex flex-col">
       <Card
         v-for="card in data"
         v-show="currentCard.id === card.id"
@@ -18,19 +11,21 @@
         :card="card"
         @left="prevCard"
         @right="nextCard"
-        @play="play"
+        @play="play(0.3)"
       />
     </div>
   </div>
 </template>
 
 <script>
-import { useFetch, useMagicKeys, useSpeechSynthesis } from '@vueuse/core';
+import { useMagicKeys, useSpeechSynthesis, usePointerSwipe } from '@vueuse/core';
 import { ref, computed, watch } from '@vue/composition-api';
 import Card from 'Components/Card.vue';
 
-const { left, right } = useMagicKeys();
-const { isFetching, error, data } = useFetch('data/120-daily-used-short-sentences.json').get().json();
+const { left, right, space, enter } = useMagicKeys();
+// const { isFetching, error, data } = useFetch('data/120-daily-used-short-sentences.json').get().json();
+
+const data = ref(require('../public/data/120-daily-used-short-sentences.json'));
 
 export default {
   name: 'App',
@@ -38,6 +33,7 @@ export default {
     Card,
   },
   setup() {
+    // just check for support
     const {
       isSupported
     } = useSpeechSynthesis('', {
@@ -51,10 +47,10 @@ export default {
       return data.value ? data.value[currentCardIndex.value] : null;
     });
 
-    const play = () => {
+    const play = (rate = 0.6) => {
       const { speak } = useSpeechSynthesis(currentCard.value.mandarin, {
         lang: 'zh',
-        rate: 0.6,
+        rate,
       });
 
       speak();
@@ -66,9 +62,23 @@ export default {
     };
 
     const prevCard = () => {
-      currentCardIndex.value = currentCardIndex.value - 1 > 0 ? currentCardIndex.value - 1 : 0;
+      currentCardIndex.value = currentCardIndex.value - 1 < 0 ? data.value.length - 1 : currentCardIndex.value - 1;
       play();
     };
+
+    const wrapper = ref(null);
+
+    usePointerSwipe(wrapper, {
+      onSwipeEnd(_, direction) {
+        if (direction === 'LEFT') {
+          nextCard();
+        }
+
+        if (direction === 'RIGHT') {
+          prevCard();
+        }
+      }
+    });
 
     watch(left, (v) => {
       if (v) {
@@ -82,9 +92,20 @@ export default {
       }
     });
 
+    watch(enter, (v) => {
+      if (v) {
+        nextCard();
+      }
+    });
+
+    watch(space, (v) => {
+      if (v) {
+        play();
+      }
+    });
+
     return {
-      isFetching,
-      error,
+      wrapper,
       data,
       isSupported,
       play,
