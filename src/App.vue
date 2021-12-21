@@ -1,123 +1,121 @@
 <template>
-  <div id="app" class="flex-1 w-full flex flex-col items-stretch">
-    <div v-if="!isSupported" class="text-sm">
-      Your browser does not support SpeechSynthesis API, <a href="https://caniuse.com/mdn-api_speechsynthesis" target="_blank">more details</a>
-    </div>
-    <div v-else ref="wrapper" class="controls-wrapper flex-1 flex flex-col">
-      <Card
-        v-for="card in data"
-        v-show="currentCard.id === card.id"
-        :key="card.id"
-        :card="card"
-        @left="prevCard"
-        @right="nextCard"
-        @play="play(0.3)"
-      />
+  <div id="app" class="h-full flex flex-col justify-between">
+    <VueTinder ref="tinder" key-name="id" :queue="queue" :allow-super="false" :offset-y="10" @submit="onSubmit">
+      <template slot-scope="scope">
+        <Card
+          :key="scope.data.id"
+          :card="scope.data"
+        />
+      </template>
+      <div slot="like" class="like-pointer">⏩</div>
+      <div slot="nope" class="nope-pointer">⏪</div>
+    </VueTinder>
+    <div class="btns flex justify-around items-center mt-10 px-10">
+      <button type="button" :class="{ 'opacity-50': history.length < 1 }" class="bg-white rounded-full shadow-md p-2 w-16 h-16 text-center text-3xl" @click.prevent="decide('rewind')">⏪</button>
+      <button v-if="isSupported" type="button" class="bg-white rounded-full shadow-md p-2 w-12 h-12 text-center text-2xl" @click.prevent="speak()">
+        <span v-if="isPlaying">🔊</span>
+        <span v-else>🔈</span>
+      </button>
+      <button type="button" class="bg-white rounded-full shadow-md p-4 w-16 h-16 text-center text-3xl" @click.prevent="decide('like')">⏩</button>
     </div>
   </div>
 </template>
 
 <script>
-import { useMagicKeys, useSpeechSynthesis, usePointerSwipe } from '@vueuse/core';
+import { useMagicKeys, useSpeechSynthesis } from '@vueuse/core';
 import { ref, computed, watch } from '@vue/composition-api';
+import VueTinder from 'vue-tinder';
 import Card from 'Components/Card.vue';
 
 const { left, right, space, enter } = useMagicKeys();
 // const { isFetching, error, data } = useFetch('data/120-daily-used-short-sentences.json').get().json();
 
-const data = ref(require('../public/data/120-daily-used-short-sentences.json'));
+const source = require('../public/data/120-daily-used-short-sentences.json');
 
 export default {
   name: 'App',
   components: {
+    VueTinder,
     Card,
   },
   setup() {
-    // just check for support
-    const {
-      isSupported
-    } = useSpeechSynthesis('', {
+    const tinder = ref(null);
+    const history = ref([]);
+    const offset = ref(0);
+    const queue = ref(source);
+
+    const speechText = computed(() => {
+      return queue.value[0].mandarin;
+    });
+
+    const { isPlaying, isSupported, speak } = useSpeechSynthesis(speechText, {
       lang: 'zh',
-      rate: 0.6,
+      rate: 0.5,
     });
 
-    const currentCardIndex = ref(0);
+    const onSubmit = ({ item, type }) => {
+      if (type === 'like') {
+        history.value.push(item);
+      }
 
-    const currentCard = computed(() => {
-      return data.value ? data.value[currentCardIndex.value] : null;
-    });
-
-    const play = (rate = 0.6) => {
-      const { speak } = useSpeechSynthesis(currentCard.value.mandarin, {
-        lang: 'zh',
-        rate,
-      });
+      if (type === 'rewind') {
+        tinder.value.rewind([history.value.pop()]);
+      }
 
       speak();
     };
 
-    const nextCard = () => {
-      currentCardIndex.value = currentCardIndex.value + 1 > data.value.length ? data.value.length - 1 : currentCardIndex.value + 1;
-      play();
-    };
-
-    const prevCard = () => {
-      currentCardIndex.value = currentCardIndex.value - 1 < 0 ? data.value.length - 1 : currentCardIndex.value - 1;
-      play();
-    };
-
-    const wrapper = ref(null);
-
-    usePointerSwipe(wrapper, {
-      onSwipeEnd(_, direction) {
-        if (direction === 'LEFT') {
-          nextCard();
+    const decide = async (choice) => {
+      if (choice === 'rewind') {
+        if (history.value.length) {
+          tinder.value.rewind([history.value.pop()]);
         }
 
-        if (direction === 'RIGHT') {
-          prevCard();
-        }
+        return;
       }
-    });
+
+      if (choice === 'play') {
+        speak();
+
+        return;
+      }
+
+      tinder.value.decide(choice);
+    };
 
     watch(left, (v) => {
       if (v) {
-        prevCard();
+        tinder.value.decide('rewind');
+      }
+    });
+
+    watch([space, enter], (v) => {
+      if (v) {
+        speak();
       }
     });
 
     watch(right, (v) => {
       if (v) {
-        nextCard();
-      }
-    });
-
-    watch(enter, (v) => {
-      if (v) {
-        nextCard();
-      }
-    });
-
-    watch(space, (v) => {
-      if (v) {
-        play();
+        tinder.value.decide('like');
       }
     });
 
     return {
-      wrapper,
-      data,
+      tinder,
+      onSubmit,
+      decide,
+      history,
+      queue,
+      offset,
+      isPlaying,
       isSupported,
-      play,
-      currentCardIndex,
-      currentCard,
-      nextCard,
-      prevCard,
+      speak,
     };
   },
 };
 </script>
 
 <style>
-  @import './styles/style.css';
+@import './styles/style.css';
 </style>

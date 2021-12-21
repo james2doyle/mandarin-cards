@@ -1,7 +1,7 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "16cffbe55da90677aee6",
-    "url": "/mandarin-cards/css/app.5c853729.css"
+    "revision": "b7ef4e1f24311115c1c1",
+    "url": "/mandarin-cards/css/app.7baf2509.css"
   },
   {
     "revision": "f8bab307c861910bd88146a2bdf2133f",
@@ -12,16 +12,16 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/mandarin-cards/data/120-daily-used-short-sentences.json"
   },
   {
-    "revision": "7798f201f54fb3e5552e73a1b4f5ff61",
+    "revision": "7e9e4ed49d615cddd6d32f6e991de764",
     "url": "/mandarin-cards/index.html"
   },
   {
-    "revision": "16cffbe55da90677aee6",
-    "url": "/mandarin-cards/js/app.b9c6cfaa.js"
+    "revision": "b7ef4e1f24311115c1c1",
+    "url": "/mandarin-cards/js/app.a87067ed.js"
   },
   {
-    "revision": "fdd003382cdab8a44da1",
-    "url": "/mandarin-cards/js/chunk-vendors.56b2881f.js"
+    "revision": "d7ec7858e2a0fece75db",
+    "url": "/mandarin-cards/js/chunk-vendors.48334dba.js"
   },
   {
     "revision": "98ac298937e691d46a9d1bf87f4fb68d",

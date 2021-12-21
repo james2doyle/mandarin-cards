@@ -19,5 +19,35 @@ body {
   -webkit-text-size-adjust: 100%;
   -ms-text-size-adjust: 100%;
 
-  @apply bg-gray-200 text-gray-900 min-h-full flex flex-col flex-1 justify-center items-center;
+  @apply bg-gray-200 text-gray-900 min-h-full overflow-hidden;
+}
+
+.vue-tinder {
+  margin: 1rem auto 0;
+  /* width: 335px; */
+  width: 98vw;
+  /* height: 447px; */
+  height: 75vh;
+  min-width: 300px;
+  max-width: 355px;
+  position: relative;
+}
+
+.nope-pointer,
+.like-pointer {
+  position: absolute;
+  z-index: 1;
+  top: 20px;
+  width: 64px;
+  height: 64px;
+  font-size: 2em;
+  text-align: center;
+}
+
+.nope-pointer {
+  right: 10px;
+}
+
+.like-pointer {
+  left: 10px;
 }

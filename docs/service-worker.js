@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/4.3.1/workbox-sw.js");
 
 importScripts(
-  "/mandarin-cards/precache-manifest.8357eaa067e1bd24948763698237c561.js"
+  "/mandarin-cards/precache-manifest.f636f643e47f088e421acf909af3357a.js"
 );
 
 workbox.core.setCacheNameDetails({prefix: "mandarin-cards"});
