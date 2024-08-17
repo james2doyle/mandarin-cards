@@ -1,0 +1,21 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html {
+  /* make sure full height is taken */
+  @apply w-full h-full fixed;
+}
+
+body {
+  font-feature-settings: 'lnum' 1;
+  font-variant-numeric: lining-nums;
+  text-rendering: optimizeLegibility;
+  -moz-osx-font-smoothing: grayscale;
+
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+  -webkit-text-size-adjust: 100%;
+  -ms-text-size-adjust: 100%;
+
+  @apply bg-gray-200 text-gray-900 dark:bg-gray-700 dark:text-gray-100 min-h-full overflow-hidden antialiased;
+}

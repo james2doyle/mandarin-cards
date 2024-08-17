@@ -1,0 +1,722 @@
+[
+  {
+    "id": 1,
+    "mandarin": "绝对不是。",
+    "english": "Absolutely not.",
+    "pinyin": "Juéduì bú shì。"
+  },
+  {
+    "id": 2,
+    "mandarin": "你跟我一起去吗？",
+    "english": "Are you coming with me?",
+    "pinyin": "Nǐ gēn wǒ yìqǐ qù ma?"
+  },
+  {
+    "id": 3,
+    "mandarin": "你能肯定吗？",
+    "english": "Are you sure?",
+    "pinyin": "Nǐ néng kěndìng ma?"
+  },
+  {
+    "id": 4,
+    "mandarin": "快到了吗?",
+    "english": "Are we almost there?",
+    "pinyin": "Kuài dàole ma?"
+  },
+  {
+    "id": 5,
+    "mandarin": "尽快。",
+    "english": "As soon as possible.",
+    "pinyin": "Jìnkuài。"
+  },
+  {
+    "id": 6,
+    "mandarin": "相信我。",
+    "english": "Believe me.",
+    "pinyin": "Xiāngxìn wǒ。"
+  },
+  {
+    "id": 7,
+    "mandarin": "买下来！",
+    "english": "Buy it!",
+    "pinyin": "Mǎi xià lái!"
+  },
+  {
+    "id": 8,
+    "mandarin": "明天打电话给我。",
+    "english": "Call me tomorrow.",
+    "pinyin": "Míngtiān dǎ diànhuà gěi wǒ。"
+  },
+  {
+    "id": 9,
+    "mandarin": "请您说得慢些好吗？",
+    "english": "Can you speak slowly?",
+    "pinyin": "Qǐng nín shuō de màn xiē hǎo ma?"
+  },
+  {
+    "id": 10,
+    "mandarin": "跟我来。",
+    "english": "Come with me.",
+    "pinyin": "Gēn wǒ lái。"
+  },
+  {
+    "id": 11,
+    "mandarin": "恭喜恭喜。",
+    "english": "Congratulations.",
+    "pinyin": "Gōngxǐ gōngxǐ。"
+  },
+  {
+    "id": 12,
+    "mandarin": "把它做对。",
+    "english": "Do it right!",
+    "pinyin": "Bǎ tā zuò duì。"
+  },
+  {
+    "id": 13,
+    "mandarin": "你当真？",
+    "english": "Do you mean it?",
+    "pinyin": "Nǐ dàngzhēn?"
+  },
+  {
+    "id": 14,
+    "mandarin": "你经常见到他吗？",
+    "english": "Do you see him often?",
+    "pinyin": "Nǐ jīngcháng jiàn dào tā ma?"
+  },
+  {
+    "id": 15,
+    "mandarin": "你明白了吗？",
+    "english": "Do you understand?",
+    "pinyin": "Nǐ míngbái le ma?"
+  },
+  {
+    "id": 16,
+    "mandarin": "你要吗？",
+    "english": "Do you want it?",
+    "pinyin": "Nǐ yào ma?"
+  },
+  {
+    "id": 17,
+    "mandarin": "你想要些什么？",
+    "english": "Do you want something?",
+    "pinyin": "Nǐ xiǎng yào xiē shénme?"
+  },
+  {
+    "id": 18,
+    "mandarin": "不要做。",
+    "english": "Don’t do it.",
+    "pinyin": "Bú yào zuò。"
+  },
+  {
+    "id": 19,
+    "mandarin": "不要夸张。",
+    "english": "Don’t exaggerate.",
+    "pinyin": "Bú yào kuāzhāng。"
+  },
+  {
+    "id": 20,
+    "mandarin": "不要告诉我。",
+    "english": "Don’t tell me that.",
+    "pinyin": "Bú yào gàosu wǒ。"
+  },
+  {
+    "id": 21,
+    "mandarin": "帮我一下。",
+    "english": "Give me a hand.",
+    "pinyin": "Bāng wǒ yíxià。"
+  },
+  {
+    "id": 22,
+    "mandarin": "一直往前走。",
+    "english": "Go right ahead.",
+    "pinyin": "Yìzhí wǎng qián zǒu。"
+  },
+  {
+    "id": 23,
+    "mandarin": "祝旅途愉快。",
+    "english": "Have a good trip.",
+    "pinyin": "Zhù lǚtú yúkuài。"
+  },
+  {
+    "id": 24,
+    "mandarin": "祝你一天过得愉快。",
+    "english": "Have a nice day.",
+    "pinyin": "Zhù nǐ yì tiān guò de yúkuài。"
+  },
+  {
+    "id": 25,
+    "mandarin": "再来一个。",
+    "english": "Have another one.",
+    "pinyin": "Zài lái yígè。"
+  },
+  {
+    "id": 26,
+    "mandarin": "你做完了吗？",
+    "english": "Have you finished?",
+    "pinyin": "Nǐ zuò wán le ma?"
+  },
+  {
+    "id": 27,
+    "mandarin": "他没空。",
+    "english": "He doesn’t have time.",
+    "pinyin": "Tā méi kòng。"
+  },
+  {
+    "id": 28,
+    "mandarin": "他现在已经在路上了。",
+    "english": "He is on his way.",
+    "pinyin": "Tā xiànzài yǐjīng zài lù shàng le。"
+  },
+  {
+    "id": 29,
+    "mandarin": "你好吗？",
+    "english": "How are you doing?",
+    "pinyin": "Nǐ hǎo ma?"
+  },
+  {
+    "id": 30,
+    "mandarin": "你要呆多久？",
+    "english": "How long are you staying?",
+    "pinyin": "Nǐ yào dāi duōjiǔ?"
+  },
+  {
+    "id": 31,
+    "mandarin": "多少钱?",
+    "english": "How much?",
+    "pinyin": "Duōshǎo qián?"
+  },
+  {
+    "id": 32,
+    "mandarin": "我对她着迷了。",
+    "english": "I am crazy about her.",
+    "pinyin": "Wǒ duì tā zháomí le。"
+  },
+  {
+    "id": 33,
+    "mandarin": "我在浪费时间。",
+    "english": "I am wasting my time.",
+    "pinyin": "Wǒ zài làngfèi shíjiān。"
+  },
+  {
+    "id": 34,
+    "mandarin": "我能做。",
+    "english": "I can do it.",
+    "pinyin": "Wǒ néng zuò。"
+  },
+  {
+    "id": 35,
+    "mandarin": "我简直不能相信。",
+    "english": "I can’t believe it.",
+    "pinyin": "Wǒ jiǎnzhí bùnéng xiāngxìn。"
+  },
+  {
+    "id": 36,
+    "mandarin": "我不能再等了。",
+    "english": "I can’t wait.",
+    "pinyin": "Wǒ bù néng zài děng le。"
+  },
+  {
+    "id": 37,
+    "mandarin": "我没时间了。",
+    "english": "I don’t have time.",
+    "pinyin": "Wǒ méi shíjiān le。"
+  },
+  {
+    "id": 38,
+    "mandarin": "我一个人都不认识。",
+    "english": "I don’t know anybody.",
+    "pinyin": "Wǒ yī gè rén dōu bú rènshi。"
+  },
+  {
+    "id": 39,
+    "mandarin": "我不喜欢。",
+    "english": "I don’t like it.",
+    "pinyin": "Wǒ bù xǐhuan。"
+  },
+  {
+    "id": 40,
+    "mandarin": "我认为不是。",
+    "english": "I don’t think so.",
+    "pinyin": "Wǒ rènwéi búshì。"
+  },
+  {
+    "id": 41,
+    "mandarin": "我感觉好多了。",
+    "english": "I feel much better.",
+    "pinyin": "Wǒ gǎnjué hǎo duō le。"
+  },
+  {
+    "id": 42,
+    "mandarin": "我找到了。",
+    "english": "I found it.",
+    "pinyin": "Wǒ zhǎo dào le。"
+  },
+  {
+    "id": 43,
+    "mandarin": "我讨厌你！",
+    "english": "I hate you!",
+    "pinyin": "Wǒ tǎoyàn nǐ!"
+  },
+  {
+    "id": 44,
+    "mandarin": "我希望如此。",
+    "english": "I hope so.",
+    "pinyin": "Wǒ xīwàng rúcǐ。"
+  },
+  {
+    "id": 45,
+    "mandarin": "我早知道了。",
+    "english": "I knew it.",
+    "pinyin": "Wǒ zǎo zhīdào le。"
+  },
+  {
+    "id": 46,
+    "mandarin": "我爱你。",
+    "english": "I love you.",
+    "pinyin": "Wǒ ài nǐ。"
+  },
+  {
+    "id": 47,
+    "mandarin": "我注意到了。",
+    "english": "I noticed that.",
+    "pinyin": "Wǒ zhùyì dào le。"
+  },
+  {
+    "id": 48,
+    "mandarin": "我明白了。",
+    "english": "I see.",
+    "pinyin": "Wǒ míngbái le。"
+  },
+  {
+    "id": 49,
+    "mandarin": "我认为是这样的。",
+    "english": "I think so.",
+    "pinyin": "Wǒ rènwéi shì zhèyàng de。"
+  },
+  {
+    "id": 50,
+    "mandarin": "我想跟他说话。",
+    "english": "I want to speak with him.",
+    "pinyin": "Wǒ xiǎng gēn tā shuō huà。"
+  },
+  {
+    "id": 51,
+    "mandarin": "我赢了。",
+    "english": "I won.",
+    "pinyin": "Wǒ yíng le。"
+  },
+  {
+    "id": 52,
+    "mandarin": "请给我一杯咖啡。",
+    "english": "I would like a cup of coffee, please.",
+    "pinyin": "Qǐng gěi wǒ yì bēi kāfēi。"
+  },
+  {
+    "id": 53,
+    "mandarin": "我饿死了。",
+    "english": "I’m hungry.",
+    "pinyin": "Wǒ è sǐ le。"
+  },
+  {
+    "id": 54,
+    "mandarin": "我要走了。",
+    "english": "I’m leaving.",
+    "pinyin": "Wǒ yào zǒu le。"
+  },
+  {
+    "id": 55,
+    "mandarin": "对不起。",
+    "english": "I’m sorry.",
+    "pinyin": "Duì bu qǐ。"
+  },
+  {
+    "id": 56,
+    "mandarin": "我习惯了。",
+    "english": "I’m used to it.",
+    "pinyin": "Wǒ xíguàn le。"
+  },
+  {
+    "id": 57,
+    "mandarin": "我会想念你的。",
+    "english": "I’ll miss you.",
+    "pinyin": "Wǒ huì xiǎngniàn nǐ de。"
+  },
+  {
+    "id": 58,
+    "mandarin": "我试试看。",
+    "english": "I’ll try.",
+    "pinyin": "Wǒ shìshì kàn。"
+  },
+  {
+    "id": 59,
+    "mandarin": "我很无聊。",
+    "english": "I’m bored.",
+    "pinyin": "Wǒ hěn wúliáo。"
+  },
+  {
+    "id": 60,
+    "mandarin": "我很忙。",
+    "english": "I’m busy.",
+    "pinyin": "Wǒ hěn máng。"
+  },
+  {
+    "id": 61,
+    "mandarin": "我玩得很开心。",
+    "english": "I’m having fun.",
+    "pinyin": "Wǒ wán de hěn kāixīn。"
+  },
+  {
+    "id": 62,
+    "mandarin": "我准备好了。",
+    "english": "I’m ready.",
+    "pinyin": "Wǒ zhǔnbèi hǎo le。"
+  },
+  {
+    "id": 63,
+    "mandarin": "我明白了。",
+    "english": "I’ve got it.",
+    "pinyin": "Wǒ míngbái le。"
+  },
+  {
+    "id": 64,
+    "mandarin": "真是难以置信！",
+    "english": "It’s incredible!",
+    "pinyin": "Zhēnshì nányǐ zhìxìn!"
+  },
+  {
+    "id": 65,
+    "mandarin": "很远吗？",
+    "english": "Is it far?",
+    "pinyin": "Hěn yuǎn ma?"
+  },
+  {
+    "id": 66,
+    "mandarin": "没关系。",
+    "english": "It doesn’t matter.",
+    "pinyin": "Méiguānxi。"
+  },
+  {
+    "id": 67,
+    "mandarin": "闻起来很香。",
+    "english": "It smells good.",
+    "pinyin": "Wén qǐlái hěn xiāng。"
+  },
+  {
+    "id": 68,
+    "mandarin": "是时候了。",
+    "english": "It’s about time.",
+    "pinyin": "Shì shíhou le。"
+  },
+  {
+    "id": 69,
+    "mandarin": "没事儿。",
+    "english": "It’s all right.",
+    "pinyin": "Méi shìr。"
+  },
+  {
+    "id": 70,
+    "mandarin": "很容易。",
+    "english": "It’s easy.",
+    "pinyin": "Hěn róngyì。"
+  },
+  {
+    "id": 71,
+    "mandarin": "很好。",
+    "english": "It’s good.",
+    "pinyin": "Hěn hǎo。"
+  },
+  {
+    "id": 72,
+    "mandarin": "离这很近。",
+    "english": "It’s near here.",
+    "pinyin": "Lí zhè hěn jìn。"
+  },
+  {
+    "id": 73,
+    "mandarin": "没什么。",
+    "english": "It’s nothing.",
+    "pinyin": "Méi shénme。"
+  },
+  {
+    "id": 74,
+    "mandarin": "该走了。",
+    "english": "It’s time to go.",
+    "pinyin": "Gāi zǒu le。"
+  },
+  {
+    "id": 75,
+    "mandarin": "那是不同的。",
+    "english": "It’s different.",
+    "pinyin": "Nà shì bùtóng de。"
+  },
+  {
+    "id": 76,
+    "mandarin": "很滑稽。",
+    "english": "It’s funny.",
+    "pinyin": "Hěn huájī。"
+  },
+  {
+    "id": 77,
+    "mandarin": "那是不可能的。",
+    "english": "It’s impossible.",
+    "pinyin": "Nà shì bù kěnéng de。"
+  },
+  {
+    "id": 78,
+    "mandarin": "还行。",
+    "english": "It’s not bad.",
+    "pinyin": "Hái xíng。"
+  },
+  {
+    "id": 79,
+    "mandarin": "不难。",
+    "english": "It’s not difficult.",
+    "pinyin": "Bù nán。"
+  },
+  {
+    "id": 80,
+    "mandarin": "不值得。",
+    "english": "It’s not worth it.",
+    "pinyin": "Bù zhí dé。"
+  },
+  {
+    "id": 81,
+    "mandarin": "很明显。",
+    "english": "It’s obvious.",
+    "pinyin": "Hěn míngxiǎn。"
+  },
+  {
+    "id": 82,
+    "mandarin": "还是一样的。",
+    "english": "It’s the same thing.",
+    "pinyin": "Háishì yíyàng de。"
+  },
+  {
+    "id": 83,
+    "mandarin": "轮到你了。",
+    "english": "It’s your turn.",
+    "pinyin": "Lún dào nǐ le。"
+  },
+  {
+    "id": 84,
+    "mandarin": "我也一样。",
+    "english": "Me too.",
+    "pinyin": "Wǒ yě yíyàng。"
+  },
+  {
+    "id": 85,
+    "mandarin": "还没有。",
+    "english": "Not yet.",
+    "pinyin": "Hái méiyǒu。"
+  },
+  {
+    "id": 86,
+    "mandarin": "放松！",
+    "english": "Relax!",
+    "pinyin": "Fàngsōng!"
+  },
+  {
+    "id": 87,
+    "mandarin": "明天见。",
+    "english": "See you tomorrow.",
+    "pinyin": "Míngtiān jiàn。"
+  },
+  {
+    "id": 88,
+    "mandarin": "她是我最好的朋友。",
+    "english": "She is my best friend.",
+    "pinyin": "Tā shì wǒ zuì hǎo de péngyǒu。"
+  },
+  {
+    "id": 89,
+    "mandarin": "她真聪明。",
+    "english": "She is so smart.",
+    "pinyin": "Tā zhēn cōngmíng。"
+  },
+  {
+    "id": 90,
+    "mandarin": "慢点儿！",
+    "english": "Slow down!",
+    "pinyin": "Màn diǎnr!"
+  },
+  {
+    "id": 91,
+    "mandarin": "告诉我。",
+    "english": "Tell me.",
+    "pinyin": "Gàosu wǒ。"
+  },
+  {
+    "id": 92,
+    "mandarin": "多谢。",
+    "english": "Thank you very much.",
+    "pinyin": "Duō xiè。"
+  },
+  {
+    "id": 93,
+    "mandarin": "这样的事情经常发生。",
+    "english": "That happens.",
+    "pinyin": "Zhè yàng de shìqíng jīngcháng fāshēng。"
+  },
+  {
+    "id": 94,
+    "mandarin": "够了。",
+    "english": "That’s enough.",
+    "pinyin": "Gòu le。"
+  },
+  {
+    "id": 95,
+    "mandarin": "很有趣。",
+    "english": "That’s interesting.",
+    "pinyin": "Hěn yǒuqù。"
+  },
+  {
+    "id": 96,
+    "mandarin": "对了。",
+    "english": "That’s right.",
+    "pinyin": "Duì le。"
+  },
+  {
+    "id": 97,
+    "mandarin": "这是真的。",
+    "english": "That’s true.",
+    "pinyin": "Zhè shì zhēn de。"
+  },
+  {
+    "id": 98,
+    "mandarin": "这里人很多。",
+    "english": "There are too many people here.",
+    "pinyin": "Zhèlǐ rén hěnduō。"
+  },
+  {
+    "id": 99,
+    "mandarin": "他们互相倾慕。",
+    "english": "They like each other.",
+    "pinyin": "Tāmen hùxiāng qīngmù。"
+  },
+  {
+    "id": 100,
+    "mandarin": "考虑一下。",
+    "english": "Think about it.",
+    "pinyin": "Kǎolǜ yí xià。"
+  },
+  {
+    "id": 101,
+    "mandarin": "太糟糕啦！",
+    "english": "Too bad!",
+    "pinyin": "Tài zāogāo la!"
+  },
+  {
+    "id": 102,
+    "mandarin": "等等我。",
+    "english": "Wait for me.",
+    "pinyin": "Děng děng wǒ。"
+  },
+  {
+    "id": 103,
+    "mandarin": "你说什么？",
+    "english": "What did you say?",
+    "pinyin": "Nǐ shuō shénme?"
+  },
+  {
+    "id": 104,
+    "mandarin": "你认为怎样？",
+    "english": "What do you think?",
+    "pinyin": "Nǐ rènwéi zěnyàng?"
+  },
+  {
+    "id": 105,
+    "mandarin": "他在说些什么？",
+    "english": "What is he talking about?",
+    "pinyin": "Tā zài shuō xiē shénme?"
+  },
+  {
+    "id": 106,
+    "mandarin": "多坏的天气！",
+    "english": "What terrible weather!",
+    "pinyin": "Duō huài de tiānqì!"
+  },
+  {
+    "id": 107,
+    "mandarin": "怎么啦？",
+    "english": "What’s going on/ happening / the problem?",
+    "pinyin": "Zěnme la?"
+  },
+  {
+    "id": 108,
+    "mandarin": "今天几号？",
+    "english": "What’s the date today?",
+    "pinyin": "Jīntiān jǐ hào?"
+  },
+  {
+    "id": 109,
+    "mandarin": "你去哪里？",
+    "english": "Where are you going?",
+    "pinyin": "Nǐ qù nǎ lǐ?"
+  },
+  {
+    "id": 110,
+    "mandarin": "他在哪里？",
+    "english": "Where is he?",
+    "pinyin": "Tā zài nǎ lǐ?"
+  },
+  {
+    "id": 111,
+    "mandarin": "你太性急了。",
+    "english": "You are impatient.",
+    "pinyin": "Nǐ tài xìngjí le。"
+  },
+  {
+    "id": 112,
+    "mandarin": "你看上去很累。",
+    "english": "You look tired.",
+    "pinyin": "Nǐ kàn shàngqù hěn lèi。"
+  },
+  {
+    "id": 113,
+    "mandarin": "你让我大吃一惊。",
+    "english": "You surprise me.",
+    "pinyin": "Nǐ ràng wǒ dà chī yì jīng。"
+  },
+  {
+    "id": 114,
+    "mandarin": "你疯了。",
+    "english": "You’re crazy.",
+    "pinyin": "Nǐ fēngle。"
+  },
+  {
+    "id": 115,
+    "mandarin": "别客气。",
+    "english": "You’re welcome.",
+    "pinyin": "Bié kèqi。"
+  },
+  {
+    "id": 116,
+    "mandarin": "你总是对的。",
+    "english": "You’re always right.",
+    "pinyin": "Nǐ zǒng shì duì de。"
+  },
+  {
+    "id": 117,
+    "mandarin": "你的心情不好。",
+    "english": "You’re in a bad mood.",
+    "pinyin": "Nǐ de xīnqíng bù hǎo。"
+  },
+  {
+    "id": 118,
+    "mandarin": "你在撒谎。",
+    "english": "You’re lying.",
+    "pinyin": "Nǐ zài sāhuǎng。"
+  },
+  {
+    "id": 119,
+    "mandarin": "你错了。",
+    "english": "You’re wrong.",
+    "pinyin": "Nǐ cuòle。"
+  },
+  {
+    "id": 120,
+    "mandarin": "哇塞！",
+    "english": "Wow!",
+    "pinyin": "Wasài!"
+  }
+]
