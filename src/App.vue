@@ -1,34 +1,25 @@
 <script setup lang="ts">
 import type { CardType } from "./types";
-import { useMagicKeys, useSpeechSynthesis, useStepper } from "@vueuse/core";
-import { computed, watch } from "vue";
+import {
+  useMagicKeys,
+  useSpeechSynthesis,
+  useStepper,
+  useSwipe,
+} from "@vueuse/core";
+import { computed, watch, ref } from "vue";
 
 import PWABadge from "./components/PWABadge.vue";
 import Card from "./components/Card.vue";
 
 import sentences from "./data/120-daily-used-short-sentences.json";
 
+const container = ref(null);
+const { isSwiping, direction } = useSwipe(container);
+
 const { left, right, space, enter } = useMagicKeys();
 
-const {
-  steps,
-  stepNames,
-  index,
-  current,
-  next,
-  previous,
-  isFirst,
-  isLast,
-  goTo,
-  goToNext,
-  goToPrevious,
-  goBackTo,
-  isNext,
-  isPrevious,
-  isCurrent,
-  isBefore,
-  isAfter,
-} = useStepper<CardType>(sentences);
+const { current, isFirst, isLast, goToNext, goToPrevious } =
+  useStepper<CardType>(sentences);
 
 const speechText = computed(() => {
   return current.value.mandarin;
@@ -37,6 +28,16 @@ const speechText = computed(() => {
 const { isPlaying, isSupported, speak } = useSpeechSynthesis(speechText, {
   lang: "zh",
   rate: 0.5,
+});
+
+watch(direction, (swipeDirection) => {
+  if (swipeDirection === "left") {
+    goToPrevious();
+  }
+
+  if (swipeDirection === "right") {
+    goToNext();
+  }
 });
 
 watch(left, (v) => {
@@ -59,7 +60,7 @@ watch(right, (v) => {
 </script>
 
 <template>
-  <div id="app" class="h-full min-h-screen py-10 flex flex-col">
+  <div id="app" ref="container" class="h-full min-h-dvh py-10 flex flex-col">
       <Card
         :key="String(current.id)"
         :card="current"
