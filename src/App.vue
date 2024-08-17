@@ -31,11 +31,11 @@ const { isPlaying, isSupported, speak } = useSpeechSynthesis(speechText, {
 });
 
 watch(direction, (swipeDirection) => {
-  if (swipeDirection === "left") {
+  if (swipeDirection === "right") {
     goToPrevious();
   }
 
-  if (swipeDirection === "right") {
+  if (swipeDirection === "left") {
     goToNext();
   }
 });
@@ -66,12 +66,12 @@ watch(right, (v) => {
         :card="current"
       />
     <div class="flex justify-around items-center mt-10 px-10">
-      <button type="button" :disabled="isFirst" class="disabled:opacity-50 bg-white rounded-full shadow-md p-2 w-16 h-16 text-center text-3xl" @click.prevent="goToPrevious">⏪</button>
-      <button v-if="isSupported" type="button" class="bg-white rounded-full shadow-md p-2 w-12 h-12 text-center text-2xl" @click.prevent="speak()">
+      <button type="button" :disabled="isFirst" class="disabled:opacity-50 bg-white rounded-full shadow-md flex items-center justify-center size-12 lg:size-16 lg:text-3xl text-center text-xl" @click.prevent="goToPrevious">⏪</button>
+      <button v-if="isSupported" type="button" class="bg-white rounded-full shadow-md flex items-center justify-center size-12 lg:size-16 lg:text-3xl text-center text-xl" @click.prevent="speak()">
         <span v-if="isPlaying">🔊</span>
         <span v-else>🔈</span>
       </button>
-      <button type="button" :disabled="isLast" class="disabled:opacity-50 bg-white rounded-full shadow-md p-4 w-16 h-16 text-center text-3xl" @click.prevent="goToNext">⏩</button>
+      <button type="button" :disabled="isLast" class="disabled:opacity-50 bg-white rounded-full shadow-md flex items-center justify-center size-12 lg:size-16 lg:text-3xl text-center text-xl" @click.prevent="goToNext">⏩</button>
     </div>
   </div>
   <PWABadge />
