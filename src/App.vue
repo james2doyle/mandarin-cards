@@ -11,10 +11,20 @@ import { computed, watch, ref } from "vue";
 import PWABadge from "./components/PWABadge.vue";
 import Card from "./components/Card.vue";
 
-import sentences from "./data/120-daily-used-short-sentences.json";
+import data from "./data/120-daily-used-short-sentences.json";
+
+function shuffleArray(array: Array<unknown>) {
+  for (let i = array.length - 1; i > 0; i--) {
+    const j = Math.floor(Math.random() * (i + 1));
+    [array[i], array[j]] = [array[j], array[i]];
+  }
+  return array;
+}
+
+const sentences = shuffleArray(data) as CardType[];
 
 const container = ref(null);
-const { isSwiping, direction } = useSwipe(container);
+const { direction } = useSwipe(container);
 
 const { left, right, space, enter } = useMagicKeys();
 
